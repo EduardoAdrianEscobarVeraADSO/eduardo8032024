@@ -69,24 +69,24 @@
 // Crea una función para calcular cuantas silabas tiene cada palabra, imprime el resultado
 // en la consola.
 
-function contarSilabas(palabra) {
-    let patronS = /[aeiouáéíóú]+/gi;
-    let matches = palabra.match(patronS);
+// function contarSilabas(palabra) {
+//     let patronS = /[aeiouáéíóú]+/gi;
+//     let matches = palabra.match(patronS);
     
-    console.log("Palabra:", palabra);
-    console.log("Coincidencias:", matches);
+//     console.log("Palabra:", palabra);
+//     console.log("Coincidencias:", matches);
     
-    if (matches !== null) {
-        return matches.length;
-    } else {
-        return 0;
-    }
-}
+//     if (matches !== null) {
+//         return matches.length;
+//     } else {
+//         return 0;
+//     }
+// }
 
-let palabra = prompt("Introduce una palabra:");
-let numSilabas = contarSilabas(palabra);
+// let palabra = prompt("Introduce una palabra:");
+// let numSilabas = contarSilabas(palabra);
 
-alert("La palabra '" + palabra + "' tiene " + numSilabas + " sílaba(s).");
+// alert("La palabra '" + palabra + "' tiene " + numSilabas + " sílaba(s).");
 
 // Crea una función que genere la tabla de multiplicar del número 5, no se debe mostrar 5
 // * 5, nos debe mostrar el resultado para las demás multiplicaciones.
@@ -173,5 +173,133 @@ alert("La palabra '" + palabra + "' tiene " + numSilabas + " sílaba(s).");
 //         console.log(fila);
 //     }
 // }
+// imprimirPiramide(5);
 
-// imprimirPiramide(5); 
+//Obtén una serie de número y devuelve la suma de todos los números positivos, si no
+// tenemos números positivos la sume debe devolver 0.
+
+// function serie(cantidad) {
+//   let serie = [];
+//   let suma = 0;
+//   let todosnegativos = true;
+  
+//   for (let i = 1; i <= cantidad; i++){
+//     let numero = parseInt(prompt(`Introduzca el ${i}º número de la serie: `));
+    
+    
+//     if (numero >= 0) {
+//       suma += numero;
+//       todosnegativos = false;
+//     }
+//   }
+  
+//   if (todosnegativos) {
+//     suma = 0;
+//   }
+  
+//   serie.push(suma);
+//   return serie;
+// }
+
+// let cantidad = parseInt(prompt("Introduzca la cantidad de números de la serie: "));
+// let serienumeros = serie(cantidad);
+// alert("La suma de los números positivos es: " + serienumeros[0]);
+
+// • Implemente una función que sume dos números y devuelva su suma en binario, el
+// número binario devuelto debe ser una cadena.
+
+// function conversion(n1, n2) {
+//   let suma = n1 + n2;
+//   let numerob = suma.toString(2)
+//   return numerob;
+// }
+// n1 = parseInt(prompt("introduzca el numero 1: "))
+// n2 = parseInt(prompt("introduzca el numero 2: "))
+// let convertir = conversion(n1, n2);
+// alert("La suma en binario es: " + convertir);
+
+
+// • Escribe una función que tome una cadena y devuelva una nueva cadena sin las vocales.
+
+// function sinvocales(palabra) {
+//   // Usa una expresión regular para encontrar todas las vocales y reemplazarlas con una cadena vacía
+//   return palabra.replace(/[aeiouáéíóú]/gi, "");
+// }
+
+// let palabra = prompt("Introduzca una palabra: ");
+// let resultado = sinvocales(palabra);
+// alert("La palabra sin vocales es: " + resultado);
+
+// Crea una función que tome un conjunto de números y devuelva el inverso aditivo de cada
+// uno. Todo los positivos se devuelve negativo y todos los negativos se devuelve positivo.
+
+// function inversoAditivo() {
+//   let numeros = [];
+//   let cantidad = parseInt(prompt("Ingrese la cantidad de números: "));
+  
+  
+//   for (let i = 1; i <= cantidad; i++) {
+//     let numero = parseInt(prompt(`Ingrese el número ${i}: `));
+//     numeros.push(numero);
+//   }
+
+ 
+//   let inversos = [];
+//   for (let i = 0; i < numeros.length; i++) {
+//     inversos.push(numeros[i] * -1);
+//   }
+  
+//   return inversos;
+// }
+
+
+// let inversos = inversoAditivo();
+// console.log(inversos);
+
+// • Escribe una función que genere de forma aleatoria un numero entre 1 y 10, y verifica si
+// este numero es par o impar.
+
+// function aleatoria() {
+//   numero1 = Math.floor(Math.random() * 100);
+//   if (numero1 % 2 === 0) {
+//     console.log(numero1)
+//     return "el numero es par";
+//   }
+//   else {
+//     console.log(numero1)
+//     return "el numero es inpar";
+//   }
+  
+// }
+
+// alert(aleatoria());
+
+// • Crea una función que convierta números del 0 al 5 en su representación textual, por
+// ejemplo: “cero”, “uno”, “dos”, “tres” etc.
+
+// function numeros(n) {
+//   if (n == 0) {
+//     return "cero"
+//   }
+//   else if (n == 1) {
+//     return "uno"
+//   }
+//   else if (n == 2) {
+//     return "dos"
+//   }
+//   else if (n == 3) {
+//     return "tres"
+//   }
+//   else if (n == 4) {
+//     return "cuatro"
+//   }
+//   else if (n == 5) {
+//     return "cinco"
+//   }
+//   else {
+//     return "numero no valido"
+//   }
+// }
+// let n = parseInt(prompt("introduzca un numero del 0 al 5"));
+// alert(numeros(n))
+
