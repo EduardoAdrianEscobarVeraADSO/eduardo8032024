@@ -39,3 +39,7 @@ a:hover {
     color: black;
     border: 1px black solid;
 }
+
+a:nth-child(1){
+  background-color: darkblue;
+}
